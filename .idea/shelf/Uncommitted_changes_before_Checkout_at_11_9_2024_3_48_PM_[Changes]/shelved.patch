@@ -1,0 +1,45 @@
+Index: Java/Rudolf_and_the_ugly_String.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Rudolf_and_the_ugly_String {\r\n\r\n}\r\n
+===================================================================
+diff --git a/Java/Rudolf_and_the_ugly_String.java b/Java/Rudolf_and_the_ugly_String.java
+--- a/Java/Rudolf_and_the_ugly_String.java	(revision 50adb5e6251e749c0c8a3b712c96906c4dcae278)
++++ b/Java/Rudolf_and_the_ugly_String.java	(date 1731147290358)
+@@ -1,3 +1,35 @@
+-public class Rudolf_and_the_ugly_String {
++import java.util.Scanner;
++
++public class Rudolf_and_the_ugly_string {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
+ 
++        // Reading number of test cases
++        int test_cases = Integer.parseInt(scanner.nextLine());
++
++        for (int t = 0; t < test_cases; t++) {
++            // Reading integer input
++            int n = Integer.parseInt(scanner.nextLine());
++
++            // Reading string input
++            String s = scanner.nextLine();
++            int i = 0;
++            int count = 0;
++
++            while (i <= s.length() - 3) {
++                // Check for "pie" or "map"
++                if (s.substring(i, i + 3).equals("pie") || s.substring(i, i + 3).equals("map")) {
++                    // Modify the string
++                    s = s.substring(0, i + 1) + s.substring(i + 2);
++                    count++;
++                } else {
++                    i++;
++                }
++            }
++            // Print the result for each test case
++            System.out.println(count);
++        }
++
++        scanner.close();
++    }
+ }
