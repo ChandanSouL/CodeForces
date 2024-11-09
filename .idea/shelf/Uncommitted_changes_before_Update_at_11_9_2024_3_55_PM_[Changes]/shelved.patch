@@ -1,0 +1,49 @@
+Index: Java/AFootball.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\r\n\r\npublic class AFootball {\r\n    public static void main(String[] args) {\r\n        Scanner n = new Scanner(System.in);\r\n        String t = n.next();\r\n\r\n        if(t.contains(\"0000000\") || t.contains(\"1111111\")){\r\n            System.out.println(\"YES\");\r\n        }else {\r\n            System.out.println(\"NO\");\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java/AFootball.java b/Java/AFootball.java
+--- a/Java/AFootball.java	(revision 26b3beed11a9856ee311f61075f25e08ddb392c0)
++++ b/Java/AFootball.java	(date 1731147883481)
+@@ -1,14 +1,19 @@
++package Java;
+ import java.util.Scanner;
+ 
+ public class AFootball {
+     public static void main(String[] args) {
+         Scanner n = new Scanner(System.in);
+         String t = n.next();
++<<<<<<< HEAD
+ 
+         if(t.contains("0000000") || t.contains("1111111")){
+             System.out.println("YES");
+         }else {
+             System.out.println("NO");
+         }
++=======
++        
++>>>>>>> 9efe19ee9fb62d279cb2a556c4bddc96fa846b12
+     }
+ }
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_23\" default=\"true\" project-jdk-name=\"23\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 26b3beed11a9856ee311f61075f25e08ddb392c0)
++++ b/.idea/misc.xml	(date 1731147702707)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
