@@ -10,6 +10,5 @@ public class AFootball {
         }else {
             System.out.println("NO");
         }
-        
     }
 }

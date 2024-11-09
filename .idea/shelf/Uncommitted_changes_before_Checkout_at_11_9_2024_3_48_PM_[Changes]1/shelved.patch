@@ -1,0 +1,15 @@
+Index: Java/AFootball.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\r\n\r\npublic class AFootball {\r\n    public static void main(String[] args) {\r\n        Scanner n = new Scanner(System.in);\r\n        String t = n.next();\r\n\r\n        if(t.contains(\"0000000\") || t.contains(\"1111111\")){\r\n            System.out.println(\"YES\");\r\n        }else {\r\n            System.out.println(\"NO\");\r\n        }\r\n        \r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java/AFootball.java b/Java/AFootball.java
+--- a/Java/AFootball.java	(revision 50adb5e6251e749c0c8a3b712c96906c4dcae278)
++++ b/Java/AFootball.java	(date 1731147290349)
+@@ -13,3 +13,4 @@
+         
+     }
+ }
++
